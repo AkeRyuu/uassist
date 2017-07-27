@@ -1211,3 +1211,132 @@ footer {
     -webkit-transform: scale(1);
   }
 }
+
+
+div#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    display: none;
+    opacity: 0;
+    transition: all 0.6s;
+    background-color: rgba(70,80,70,0.8);
+}
+
+#modal .content {
+      width: 75%;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+#modal .content .table {
+    border: 1px solid #808080;
+    border-radius: 7px;
+    display: flex;
+        height: 50vh;
+}
+
+#modal .content .table .item {
+    border-right: 1px solid gray;
+    /* padding: 0 10px; */
+}
+
+#modal .content .table .item .title_block {
+    color: blue;
+    border-bottom: 1px solid blue;
+    padding: 5px 10px;
+    height: 11%;
+}
+
+#modal .content .table .item .title_block p {
+    text-align: center;
+    font-size: 20px;
+}
+
+#modal .content .table .item .main_text {
+      padding-bottom: 15px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-right: 10px;
+    color: #00f;
+    height: 13%;
+}
+
+#modal .content .table .item p {
+      height: 42%;
+    margin-bottom: 0;
+    padding: 0 10px;
+}
+
+#modal .content .table .item .rate_item {
+    text-align: center;
+    padding: 10px 3px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#modal .content .table .item .rate .rate_item {
+      margin: 0;
+}
+
+#modal .content .table .item .rate {
+    display: flex;
+    border-top: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+    height: 19%;
+}
+
+
+#modal .content .table .item .modal_submit {
+    height: 15%;
+    display: flex;
+}
+
+#modal .content .table .item .modal_submit button {
+    margin: auto;
+    padding: 5px 10px;
+    border: 2px solid #f00;
+    border-radius: 8px;
+    color: white;
+    background-color: red;
+    transition: all 0.2s;
+}
+
+#modal .content .table .item .modal_submit button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+#modal .content .table .item .modal_submit button:active {
+  transform: scale(0.9);
+}
+
+.close_modal {
+  position: absolute;
+    right: 15px;
+    top: 15px;
+}
+.contact-btn {
+  margin: auto;
+    padding: 5px 10px;
+    border: 2px solid #f00;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #f00;
+    transition: all 0.2s;
+}
+.contact-btn:hover{
+cursor: pointer;
+  background-color: white;
+  color: black;
+}
+.contact-btn:active {
+  transform: scale(0.9);
+}

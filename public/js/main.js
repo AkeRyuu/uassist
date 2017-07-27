@@ -131,3 +131,31 @@
     "use strict";
     $('#loader').fadeOut();
    });
+
+
+   //--------------------------------------------------
+   var close_modal = (e) => {
+       var modal = e.parentElement.parentElement;
+       modal.style.opacity = "0";
+       setTimeout(()=>{modal.style.display = "none";},600);
+   }
+   var open_modal = (e) => {
+       e.style.display = "block";
+       setTimeout(()=>{modal.style.opacity = "1"},100);
+   }
+    var toggle = (e) => {
+       var body = e.getAttribute("aria-controls");
+       var state = e.getAttribute("aria-expanded");
+       if (state == "false") {
+           document.getElementById(body).style.display = "block";
+             e.setAttribute("aria-expanded","true") ;
+       } else {
+            document.getElementById(body).style.display = "none";
+            e.setAttribute("aria-expanded","false");
+       }
+       
+   }
+
+
+
+   

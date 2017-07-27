@@ -1,6 +1,159 @@
 {% extends 'layout.twig' %}
 
 {% block body %}
+<div id="modal">
+      <div class="content">
+        <a class="close_modal" href="#pricing" onclick="close_modal(this)"><i class="fa fa-times fa-2x" aria-hidden="true"></i></a>
+        <h2 class="text-center">
+          Lorem ipsum dolor
+        </h2>
+        <p>
+          The Roosevelt dime is the current ten-cent piece of the United States, displaying President Franklin D. Roosevelt on the obverse. Authorized soon after his death in 1945, it has been produced by the Mint continuously since 1946 in large numbers. 
+        </p>
+        <div class="table">
+          <div class="item">
+            <div class="title_block">
+              <p>Pay per hour</p>
+            </div>
+            <ul class="main_text">
+              <li>text</li>
+              <li>text</li>
+            </ul>
+            <p>
+              The Roosevelt dime is the current ten-cent piece of the United States, displaying President Franklin D. Roosevelt on the obverse.
+            </p>
+            <div class="rate">
+              <div class="rate_item">
+                <p>
+                  Different hour rate for different services
+                </p>
+              </div>
+            </div>
+            <div class="modal_submit">
+              <button>Contact us!</button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="title_block">
+              <p>Traveller package</p>
+            </div>
+            <ul class="main_text">
+              <li>text</li>
+              <li>text</li>
+            </ul>
+            <p>
+              The Roosevelt dime is the current ten-cent piece of the United States, displaying President Franklin D. Roosevelt on the obverse.
+            </p>
+            <div class="rate">
+              <div class="rate_item">
+                <p>
+                  up to 4h
+                </p>
+              </div>
+              <div class="rate_item">
+                <p>
+                  up to 8h
+                </p>
+              </div>
+            </div>
+            <div class="modal_submit">
+              <button>Book now</button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="title_block">
+              <p>Research package</p>
+            </div>
+            <ul class="main_text">
+              <li>text</li>
+              <li>text</li>
+            </ul>
+            <p>
+              The Roosevelt dime is the current ten-cent piece of the United States, displaying President Franklin D. Roosevelt on the obverse.
+            </p>
+            <div class="rate">
+              <div class="rate_item">
+                <p>
+                  up to 4h
+                </p>
+              </div>
+              <div class="rate_item">
+                <p>
+                  up to 8h
+                </p>
+              </div>
+            </div>
+            <div class="modal_submit">
+              <button>Book now</button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="title_block">
+              <p>Business package</p>
+            </div>
+            <ul class="main_text">
+              <li>text</li>
+              <li>text</li>
+            </ul>
+            <p>
+              The Roosevelt dime is the current ten-cent piece of the United States, displaying President Franklin D. Roosevelt on the obverse.
+            </p>
+            <div class="rate">
+              <div class="rate_item">
+                <p>
+                  up to 4h
+                </p>
+              </div>
+              <div class="rate_item">
+                <p>
+                  up to 8h
+                </p>
+              </div>
+            </div>
+            <div class="modal_submit">
+              <button>Book now</button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="title_block">
+              <p>Individual project</p>
+            </div>
+            <ul class="main_text">
+              <li>text</li>
+              <li>text</li>
+            </ul>
+            <p>
+              The Roosevelt dime is the current ten-cent piece of the United States, displaying President Franklin D. Roosevelt on the obverse.
+            </p>
+            <div class="rate">
+              <div class="rate_item">
+                <p>
+                  Contact us and we'll discuss your project
+                </p>
+              </div>
+            </div>
+            <div class="modal_submit">
+              <button>Contact us!</button>
+            </div>
+          </div>
+        </div>
+        <h2 class="text-center" style="margin:0">
+          How does it work?
+        </h2>
+        <p style="margin:0">
+        <span class="step">Step 1:</span>
+        The Roosevelt dime is the current ten-cent piece of the United States, displaying President Franklin D. Roosevelt on the obverse.</br>
+        <span class="step">Step 2:</span>
+        The Roosevelt dime is the current ten-cent piece of the United States, displaying President Franklin D. Roosevelt on the obverse.
+        </p>
+        <h4 class="text-center" style="margin:0">
+          Still got question?
+        </h4>
+        <div style="display: flex;">
+        <a class="contact-btn" href="#contact" onclick="close_modal(document.querySelector('.close_modal'))">Contact us!</a>
+        </div>
+      </div>
+    </div>
   <div class="menu-wrap">
         <nav class="menu navbar">
           <div class="icon-list navbar-collapse">
@@ -47,7 +200,7 @@
             <div class="contents text-center">
               <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">UASSIST - your lifestyle and business assistant in Lviv</h1>
               <p class="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">We are a team with 3 years of experience in providing local concierge services for tourists, researchers and business.</p>
-              <a href="#" class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms"><i class="fa fa-hand-o-down"></i> Let's start!</a>
+              <a href="#services" class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms"><i class="fa fa-hand-o-down"></i> Let's start!</a>
             </div>
           </div>
         </div> 
@@ -255,7 +408,7 @@ the complexity of the procedure, mistakes in processing documents, time consumin
                 </ul> </span>
               </div>
               <div class="plan-button">
-                <a href="#" class="btn btn-common"> Book it now!</a>
+                <a href="#pricing" class="btn btn-common" onclick="open_modal(document.getElementById('modal'))"> Book it now!</a>
               </div>
             </div>
           </div>
@@ -281,7 +434,7 @@ the complexity of the procedure, mistakes in processing documents, time consumin
                 </ul> </span>
               </div>
               <div class="plan-button">
-                <a href="#" class="btn btn-common">Book it now!</a>
+                <a href="#pricing" class="btn btn-common" onclick="open_modal(document.getElementById('modal'))">Book it now!</a>
               </div>
             </div>
           </div>
@@ -310,7 +463,7 @@ the complexity of the procedure, mistakes in processing documents, time consumin
                 </ul> </span>
               </div>
               <div class="plan-button">
-                <a href="#" class="btn btn-common">Book it now!</a>
+                <a href="#pricing" class="btn btn-common" onclick="open_modal(document.getElementById('modal'))">Book it now!</a>
               </div>
             </div>
           </div>
@@ -357,7 +510,49 @@ the complexity of the procedure, mistakes in processing documents, time consumin
       </div>
     </div>
     <!-- testimonial Section Start -->
-
+    <section id="faq" class="section">
+      <div class="container">
+        <h2 class="text-center">FAQ</h2>
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title" style="color:#5fa7fb" role="button" onclick="toggle(this)" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="collapseOne">
+                  Collapsible Group Item #1
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h4 style="color:#5fa7fb" class="panel-title collapsed" onclick="toggle(this)" role="button" data-toggle="collapse" data-parent="#accordion"  aria-expanded="false" aria-controls="collapseTwo" >
+                  Collapsible Group Item #2
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+              <h4 class="panel-title collapsed" style="color:#5fa7fb" onclick="toggle(this)" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="collapseThree">
+                  Collapsible Group Item #3
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Download Section Start -->
     <section id="download" class="section">
       <div class="container">
@@ -479,5 +674,6 @@ the complexity of the procedure, mistakes in processing documents, time consumin
         <div class="double-bounce1"></div>
         <div class="double-bounce2"></div>
       </div>
-    </div>    
+    </div>
+        
 {% endblock %}
