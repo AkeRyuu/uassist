@@ -73,14 +73,14 @@ block content
                     Our basic principles are high privacy, individual approach, the highest level of convenience and comfort for the client.
                     Uassist provides call-center services 9-20h for saving your time for the most important things.
             .row
-                - services.forEach((e,i)=>{
+                //- services.forEach((e,i)=>{
                     div(class="col-md-4 col-sm-6")
                         div(class="item-boxes wow fadeInDown", data-wow-delay=(i*0.2)+"s")
                             .icon
                                 i(class="fa fa-user")
                             h4=e.name
                             p=e.desc
-                - },this)
+                 },this)
     section( id="features", class="section", data-stellar-background-ratio="0.2")
         div( class="container")
             div( class="section-header")
@@ -148,3 +148,119 @@ block content
                         p( class="wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms") Learn more about us, its only 30mins
                         a( href="https://www.youtube.com/watch?v=JNR6gD51CtU", class="video-popup wow fadeInUp", data-wow-duration="1000ms", data-wow-delay="0.3s")
                             i(class="lnr lnr-film-play")
+
+    div(id="pricing" class="section pricing-section")
+        div.container
+            div.section-header
+                h2(class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s") 
+                    | Our
+                    span Packages
+                hr(class="lines wow zoomIn" data-wow-delay="0.3s")
+                p(class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s")
+                    | Basic package – for free, included in each package
+            div.row.pricing-tables
+                div.col-md-4.col-sm-6.col-xs-12
+                    div( class="pricing-table table-left wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="0.3s")
+                        div.icon
+                            i.lnr.lnr-heart
+                        div.pricing-details
+                            h2 Traveller package
+                            ul
+                                li Be your local assistant
+                                li Provide local guidance
+                                li Provide local private tours
+                                li Help you see Lviv from the best perspective
+                            ul
+                                span
+                                    li Interpret/translate
+                                    li Accompany to events
+                                    li Running errands
+                                    li Perform personalized shopping and delivery
+                        div.plan-button
+                            a(href="#pricing" class="btn btn-common" onclick="open_modal(document.getElementById('modal'))")
+                                | Book it now!
+                div.col-md-4.col-sm-6.col-xs-12
+                    div(class="pricing-table wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0.3s")
+                        div.icon
+                            i.lnr.lnr-rocket
+                        div.pricing-details
+                            h2 Researcher package
+                            ul
+                                li Help you find local contacts
+                                li Help you do local research
+                                li Be a local fixer
+                                li Give you an access to local databases
+                            ul 
+                                span
+                                    li Info about other research institutions and local leaders
+                                    li Arranging the meetings with the experts
+                                    li Arranging a contact with local embassies, other local foreign organizations
+                                    li Arranging legal consulting
+                        div.plan-button
+                            a(href="#pricing" class="btn btn-common" onclick="open_modal(document.getElementById('modal'))")
+                                | Book it now!
+                div.col-md-4.col-sm-6.col-xs-12
+                    div(class="pricing-table table-left wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="0.3s")
+                        div.icon
+                            i.lnr.lnr-briefcase
+                        div.pricing-details
+                            h2 Business package
+                            ul
+                                li Connect you to business opportunities
+                                li Be the local secretary
+                                li Provide basic business services 
+                                li Local trust agent
+                            ul 
+                                span
+                                    li Provide business referral service
+                                    li Identifying potential business partners
+                                    li Make telephone calls
+                                    li Legal, Accounting support 
+                                    li Assist with banking and money matters 
+                                    li Organize/Assist with events 
+                                    li Initial research on basic economic data, basic feasibility of your products
+                        div.plan-button 
+                            a(href="#pricing" class="btn btn-common" onclick="open_modal(document.getElementById('modal'))")
+                                | Book it now!
+
+    div(id="testimonial" class="section")
+        div.container
+            div.row.justify-content-md-center
+                div(class="col-md-10 wow fadeInRight" data-wow-delay="0.2s")
+                    div.touch-slider.owl-carousel.owl-theme
+                        div.testimonial-item
+                            img(src="img/testimonial/customer1.png" alt="Client Testimonoal")
+                            div.testimonial-text
+                                p 
+                                    | Morbi eget dictum enim. Praesent sed quam sit amet lorem tempor rhoncus.
+                                    br In hac habitasse platea dictumst. 
+                                    | Vivamus in accumsan ex
+                                h3 Johnathan Doe
+                                span Marketing Head Matrix media 
+                        div.testimonial-item
+                            img(src="img/testimonial/customer2.png" alt="Client Testimonoal")
+                            div.testimonial-text
+                                p 
+                                    | Morbi eget dictum enim. Praesent sed quam sit amet lorem tempor rhoncus.
+                                    br In hac habitasse platea dictumst.
+                                    | Vivamus in accumsan ex
+                                h3 Oidila Matik
+                                span President Lexo Inc        
+                        div.testimonial-item
+                            img(src="img/testimonial/customer3.png" alt="Client Testimonoal")
+                            div.testimonial-text
+                                p 
+                                    | Morbi eget dictum enim. Praesent sed quam sit amet lorem tempor rhoncus.
+                                    br In hac habitasse platea dictumst.
+                                    | Vivamus in accumsan ex
+                                h3 - Alex Dattilo
+                                span CEO Optima Inc
+    section(id="faq" class="section")
+        div.container
+            h2.text-center FAQ
+            div(class="panel-group" id="accordion" role="tablist" aria-multiselectable="true")
+                div.panel.panel-default
+                    div(class="panel-heading" role="tab" id="headingOne")
+                        h4(class="panel-title" style="color:#5fa7fb" role="button" onclick="toggle(this)" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="collapseOne") Collapsible Group Item #1
+545 строка
+545 545 545 545

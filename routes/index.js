@@ -8,4 +8,5 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express',table_items : db.table_items,menu:db.menu_list,services:db.service_list });
 });
 
+
 module.exports = router;
