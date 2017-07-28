@@ -12,6 +12,7 @@
     "express": "~4.15.2",
     "morgan": "~1.8.1",
     "pug": "^2.0.0-rc.2",
+    "rethinkdb": "^2.3.3",
     "serve-favicon": "~2.4.2",
     "twig": "~0.10.3"
   }

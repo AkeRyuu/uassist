@@ -44,7 +44,7 @@ block content
         button.close-button(id="close-button")
             i(class="lnr lnr-cross")
     // heder with video
-    header(id="video-area",data-stellar-background-ratio="0.5")
+    section(id=data[0].id,data-stellar-background-ratio="0.5")
         div(id="block",data-vide-bg="video/video")
         .fixed-top
             .container
@@ -58,20 +58,18 @@ block content
             div(class="row justify-content-md-center")
                 .col-md-10
                     div(class="contents text-center")
-                         h1(class="wow fadeInDown",data-wow-duration="1000ms",data-wow-delay="0.3s") UASSIST - your lifestyle and business assistant in Lviv
-                         p(class="lead  wow fadeIn", data-wow-duration="1000ms", data-wow-delay="400ms") We are a team with 3 years of experience in providing local concierge services for tourists, researchers and business.
+                         h1(class="wow fadeInDown",data-wow-duration="1000ms",data-wow-delay="0.3s")=data[0].name
+                         p(class="lead  wow fadeIn", data-wow-duration="1000ms", data-wow-delay="400ms")=data[0].desc
                          a(href="#services", class="btn btn-common wow fadeInUp", data-wow-duration="1000ms", data-wow-delay="400ms")
                             i(class="fa fa-hand-o-down")
-                            |Let's start!
+                            |#{data[0].btn}
     // services block
-    section.section(id="services")
+    section.section(id=data[1].id)
         .container
             .section-header
-                h2(class="section-title wow fadeIn", data-wow-duration="1000ms", data-wow-delay="0.3s") Our <span>Services</span>
+                h2(class="section-title wow fadeIn", data-wow-duration="1000ms", data-wow-delay="0.3s")=data[1].name
                 hr(class="lines wow zoomIn", data-wow-delay="0.3s")
-                p(class="section-subtitle wow fadeIn", data-wow-duration="1000ms", data-wow-delay="0.3s") .
-                    Our basic principles are high privacy, individual approach, the highest level of convenience and comfort for the client.
-                    Uassist provides call-center services 9-20h for saving your time for the most important things.
+                p(class="section-subtitle wow fadeIn", data-wow-duration="1000ms", data-wow-delay="0.3s")=data[1].desc
             .row
                 - services.forEach((e,i)=>{
                     div(class="col-md-4 col-sm-6")
@@ -81,14 +79,12 @@ block content
                             h4=e.name
                             p=e.desc
                 - },this)
-    section( id="features", class="section", data-stellar-background-ratio="0.2")
+    section( id=data[2].id, class="section", data-stellar-background-ratio="0.2")
         div( class="container")
             div( class="section-header")
-                h2( class="section-title wow fadeIn", data-wow-duration="1000ms", data-wow-delay="0.3s") Our Core <span>Features</span>
+                h2( class="section-title wow fadeIn", data-wow-duration="1000ms", data-wow-delay="0.3s")=data[2].name
                 hr(class="lines wow zoomIn", data-wow-delay="0.3s")
-                p( class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s") Our team consists of professional, polite and active personal managers who will help to smartly save your time in Lviv,
-                    |top class external experts, who will provide excellent consulting for your business or research and verified locals
-                    |who will be happy to show you Lviv from the best perspective.
+                p( class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s")=data[2].desc
             div( class="row")
                 div( class="col-lg-4 col-md-4 col-sm-4 col-xs-12")
                     div( class="content-left text-right wow fadeInLeft animated" ,data-wow-offset="10")
@@ -138,15 +134,15 @@ block content
                                 p We have set up an English speaking call-center where every ready-for-service manager is instructed and answers
                                     |based on the created database, including recommended services and partners with discounts.
 
-    section( class="video-promo section", data-stellar-background-ratio="0.5")
+    section(id=data[3].id class="video-promo section", data-stellar-background-ratio="0.5")
         .overlay
         .container
             .row
                 div( class="col-md-12 col-sm-12")
                     div( class="video-promo-content text-center")
-                        h2(class="wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms") Our Introductory Video
-                        p( class="wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms") Learn more about us, its only 30mins
-                        a( href="https://www.youtube.com/watch?v=JNR6gD51CtU", class="video-popup wow fadeInUp", data-wow-duration="1000ms", data-wow-delay="0.3s")
+                        h2(class="wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms")=data[3].name
+                        p( class="wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms")=data[3].desc
+                        a( href=data[3].url, class="video-popup wow fadeInUp", data-wow-duration="1000ms", data-wow-delay="0.3s")
                             i(class="lnr lnr-film-play")
 
     div(id="pricing" class="section pricing-section")
@@ -223,7 +219,7 @@ block content
                             a(href="#pricing" class="btn btn-common" onclick="open_modal(document.getElementById('modal'))")
                                 | Book it now!
 
-    div(id="testimonial" class="section")
+    div(id=data[4].id class="section")
         div.container
             div.row.justify-content-md-center
                 div(class="col-md-10 wow fadeInRight" data-wow-delay="0.2s")
@@ -257,9 +253,9 @@ block content
                                     |Vivamus in accumsan ex
                                 h3 Alex Dattilo
                                 span CEO Optima Inc
-    section(id="faq" class="section")
+    section(id=data[5].id class="section")
         div.container
-            h2.text-center FAQ
+            h2.text-center=data[5].name
             div(class="panel-group" id="accordion" role="tablist" aria-multiselectable="true")
                 each panel in faq
                     div.panel.panel-default

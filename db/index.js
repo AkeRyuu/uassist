@@ -1,3 +1,25 @@
+r = require('rethinkdb');
+var conn;
+r.connect({
+     host: '93.190.44.80'
+}, function(err, connection) {
+    if (err) throw err;
+    conn = connection;
+});
+
+var ref = r.db("uassist").table("index");
+
+
+
+var check_db = (callback) => {
+    ref.orderBy({index:"sort"}).run(conn,(err,cur)=>{
+        cur.toArray((err,res)=>callback(res));
+    })
+}
+
+
+
+
 var table_items = [{
         title: "Ppa per hour",
         desc: "The Roosevelt dime is the current ten-cent piece of the United States, displaying President Franklin D. Roosevelt on theobverse.",
@@ -99,3 +121,4 @@ module.exports.faq_list = faq_list;
 module.exports.table_items = table_items;
 module.exports.menu_list = menu_list;
 module.exports.service_list = service_list;
+module.exports.check_db = check_db;
