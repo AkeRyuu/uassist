@@ -77,6 +77,25 @@ var service_list = [{
         desc: "The issues during registration of a company in Ukraine is the complexity of the procedure, mistakes in processing documents, time consuming procedure"
     }
 ]
+
+var faq_list = [
+    {
+        id:"collapseOne",
+        question: "Collapsible Group Item #1",
+        answer: "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggingsoccaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamuslabore sustainable VHS.``"
+    },
+    {
+        id:"collapseTwo",
+        question: "Collapsible Group Item #2",
+        answer: "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggingsoccaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamuslabore sustainable VHS.``"
+    },
+    {
+        id:"collapseThree",
+        question: "Collapsible Group Item #3",
+        answer: "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggingsoccaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamuslabore sustainable VHS.``"
+    }
+]
+module.exports.faq_list = faq_list;
 module.exports.table_items = table_items;
 module.exports.menu_list = menu_list;
 module.exports.service_list = service_list;

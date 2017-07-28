@@ -73,14 +73,14 @@ block content
                     Our basic principles are high privacy, individual approach, the highest level of convenience and comfort for the client.
                     Uassist provides call-center services 9-20h for saving your time for the most important things.
             .row
-                //- services.forEach((e,i)=>{
+                - services.forEach((e,i)=>{
                     div(class="col-md-4 col-sm-6")
                         div(class="item-boxes wow fadeInDown", data-wow-delay=(i*0.2)+"s")
                             .icon
                                 i(class="fa fa-user")
                             h4=e.name
                             p=e.desc
-                 },this)
+                - },this)
     section( id="features", class="section", data-stellar-background-ratio="0.2")
         div( class="container")
             div( class="section-header")
@@ -231,36 +231,121 @@ block content
                         div.testimonial-item
                             img(src="img/testimonial/customer1.png" alt="Client Testimonoal")
                             div.testimonial-text
-                                p 
-                                    | Morbi eget dictum enim. Praesent sed quam sit amet lorem tempor rhoncus.
-                                    br In hac habitasse platea dictumst. 
-                                    | Vivamus in accumsan ex
+                                p Morbi eget dictum enim. Praesent sed quam sit amet lorem tempor rhoncus.
+                                    br
+                                    |In hac habitasse platea dictumst. 
+                                    |Vivamus in accumsan ex
                                 h3 Johnathan Doe
                                 span Marketing Head Matrix media 
                         div.testimonial-item
                             img(src="img/testimonial/customer2.png" alt="Client Testimonoal")
                             div.testimonial-text
                                 p 
-                                    | Morbi eget dictum enim. Praesent sed quam sit amet lorem tempor rhoncus.
-                                    br In hac habitasse platea dictumst.
-                                    | Vivamus in accumsan ex
+                                    |Morbi eget dictum enim. Praesent sed quam sit amet lorem tempor rhoncus.
+                                    br
+                                    |In hac habitasse platea dictumst.
+                                    |Vivamus in accumsan ex
                                 h3 Oidila Matik
                                 span President Lexo Inc        
                         div.testimonial-item
                             img(src="img/testimonial/customer3.png" alt="Client Testimonoal")
                             div.testimonial-text
                                 p 
-                                    | Morbi eget dictum enim. Praesent sed quam sit amet lorem tempor rhoncus.
-                                    br In hac habitasse platea dictumst.
-                                    | Vivamus in accumsan ex
-                                h3 - Alex Dattilo
+                                    |Morbi eget dictum enim. Praesent sed quam sit amet lorem tempor rhoncus.
+                                    br
+                                    |In hac habitasse platea dictumst.
+                                    |Vivamus in accumsan ex
+                                h3 Alex Dattilo
                                 span CEO Optima Inc
     section(id="faq" class="section")
         div.container
             h2.text-center FAQ
             div(class="panel-group" id="accordion" role="tablist" aria-multiselectable="true")
-                div.panel.panel-default
-                    div(class="panel-heading" role="tab" id="headingOne")
-                        h4(class="panel-title" style="color:#5fa7fb" role="button" onclick="toggle(this)" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="collapseOne") Collapsible Group Item #1
-545 строка
-545 545 545 545
+                each panel in faq
+                    div.panel.panel-default
+                        div(class="panel-heading" role="tab" id="headingOne")
+                            h4.panel-title( style="color:#5fa7fb" role="button" onclick="toggle(this)" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls=panel.id)=panel.question
+                        div(id=panel.id,class="panel-collapse collapse in" ,role="tabpanel")
+                            .panel-body=panel.answer
+    section#download.section
+        .container
+            .section-header
+                h2.section-title.wow.fadeInDown(data-wow-duration="1000ms" data-wow-delay="0.3s") <span>Book</span> Our Services
+            .row
+                .col-md-12
+                    .download-area.text-center.wow.fadeInUp(data-wow-delay="0.3s")
+                        a(href="#", class="btn btn-border")
+                            i.fa.fa-check
+                            |Book now
+    section#contact.section
+        .container
+            .row.justify-content-md-center
+                .col-md-9.wow.fadeInDown(data-wow-duration="1000ms" data-wow-delay="0.3s")
+                    .contact-block
+                        .section-header
+                            h2.section-title.wow.fadeIn(data-wow-duration="1000ms", data-wow-delay="0.3s") Contact <span>Us</span></h2>
+                            hr.lines.wow.zoomIn(data-wow-delay="0.3s")
+                        form#contactForm
+                            .row
+                                .col-md-6
+                                    .form-group
+                                        input(type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name")
+                                        .help-block.with-errors
+                                .col-md-6
+                                    .form-group
+                                        input(type="text" placeholder="Your Email" id="email" class="form-control" name="name" required data-error="Please enter your email")
+                                        .help-block.with-errors
+                                .col-md-12
+                                    .form-group
+                                        input(type="text" placeholder="Subject" id="msg_subject" class="form-control" required data-error="Please enter your subject")
+                                        .help-block.with-errors
+                                .col-md-12
+                                    .form-group
+                                        textarea.form-control(placeholder="Your Message" rows="11" data-error="Write your message" required)
+                                        .help-block.with-errors
+                                    .submit-button.text-center
+                                        button.btn.btn-common(id="submit" type="submit") Send Message
+                                        #msgSubmit.h3.text-center.hidden
+                                        .clearfix
+    #subscribe.section
+        .container
+            .section-header
+                h2.section-title.wow.fadeIn(data-wow-duration="1000ms" data-wow-delay="0.3s") Subscribe <span>Newsletter</span>
+                hr.lines.wow.zoomIn(data-wow-delay="0.3s")
+                p.section-subtitle.wow.fadeIn(data-wow-duration="1000ms" data-wow-delay="0.3s") Subscribe to get all latest news from us.
+            .row.justify-content-md-center
+                .col-md-8
+                    form.text-center.form-inline.wow.fadeInUp(data-wow-delay="0.3s")
+                        input.mb-20.form-control(name="email" placeholder="Your Email Address")
+                        button.sub_btn subscribe
+    footer
+        .container
+            .row
+            .col-md-12
+                .social-icons.wow.fadeInDown(data-wow-duration="1000ms" data-wow-delay="0.3s")
+                    ul
+                        li.facebook
+                            a(href="#")
+                                i.fa.fa-facebook
+                        li.twitter
+                            a(href="#")
+                                i.fa.fa-twitter
+                        li.google-plus
+                            a(href="#")
+                                i.fa.fa-google-plus
+                        li.linkedin
+                            a(href="#")
+                                i.fa.fa-linkedin
+                        li.pinterest
+                            a(href="#")
+                                i.fa.fa-pinterest
+                        li.dribbble
+                            a(href="#")
+                                i.fa.fa-dribbble
+                .site-info.wow.fadeInUp(data-wow-duration="1000ms" data-wow-delay="0.3s")
+    a.back-to-top(href="#")
+        i.lnr.lnr-arrow-up
+    #loader
+        .spinner
+            .double-bounce1
+            .double-bounce2
