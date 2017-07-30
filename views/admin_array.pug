@@ -1,7 +1,7 @@
 extends admin_layout
 
 block content
-    ul
+    ul.admin-array
         each item in array
             li
                 form(action="/admin/item/"+item.id, method="POST")
@@ -16,6 +16,10 @@ block content
                     - if ('sort' in item) {
                         label Порядок
                         input(type="text", value=item.sort, name="sort")
+                    - }
+                    - if ('ico' in item) {
+                        label Клас іконки
+                        input(type="text", value=item.ico, name="ico")
                     - }
                         input(type="submit",name="submit",value="Update")
                         //-input(type="submit",name="submit",value="Delete")

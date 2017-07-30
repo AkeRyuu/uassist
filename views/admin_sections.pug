@@ -1,6 +1,8 @@
 extends admin_layout
 
 block content
-    ul
+    ul.aindex-ul.asections
         each section in list
-            li: a(href="/admin/section/"+section.id)=section.name
+            div
+                a(href="/admin/section/"+section.id)
+                    li=section.name

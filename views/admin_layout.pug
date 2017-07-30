@@ -2,6 +2,13 @@ doctype html
 html
     head
     title=title
-    link(rel="stylesheet", href="css/admin.css")
+    link(rel="stylesheet", href="/css/admin.css")
+    link(rel="stylesheet", href="//fonts.googleapis.com/css?family=Raleway")
     body
+        img.bg-img(src="/img/admin/UAsist.png")
+        - if (backURL!=null && backURL!=undefined) {
+            a.back-img(href=backURL)
+                img(src="/img/admin/back.png")
+        - }
+        img.bg-img(src="/img/admin/Admin_page.png")
         block content
