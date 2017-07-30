@@ -2,7 +2,7 @@ extends admin_layout
 
 block content
     form(action="/admin/item/"+item.id, method="POST")
-        ul
+        ul.asection
             - if ('name' in item) {
                 li
                     label Назва секції

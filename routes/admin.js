@@ -9,7 +9,8 @@ router.get('/', function(req, res, next) {
 
 router.get('/sections', (req,res,next)=>{
   db.getList((e)=>{
-    res.render('admin_sections',{title:"Sections",list:e});
+    backURL=req.header('Referer') || '/admin';
+    res.render('admin_sections',{title:"Sections",list:e, backURL:backURL});
   })
 })
 
