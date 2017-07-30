@@ -1,0 +1,21 @@
+extends admin_layout
+
+block content
+    ul
+        each item in array
+            li
+                form(action="/admin/item/"+item.id, method="POST")
+                    - if ('name' in item) {
+                        label Назва
+                        input(type="text", value=item.name, name="name")
+                    - }
+                    - if ('desc' in item) {
+                        label Опис
+                        textarea(name="desc")=value=item.desc
+                    - }
+                    - if ('sort' in item) {
+                        label Порядок
+                        input(type="text", value=item.sort, name="sort")
+                    - }
+                        input(type="submit",name="submit",value="Update")
+                        //-input(type="submit",name="submit",value="Delete")

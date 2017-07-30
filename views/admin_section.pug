@@ -1,0 +1,35 @@
+extends admin_layout
+
+block content
+    form(action="/admin/item/"+item.id, method="POST")
+        ul
+            - if ('name' in item) {
+                li
+                    label Назва секції
+                    input(type="text", value=item.name, name="name")
+            - }
+            - if ('desc' in item) {
+                li
+                    label Опис секції
+                    textarea(name="desc")=value=item.desc
+            - }
+            - if ('sort' in item) {
+                li
+                    label Порядок
+                    input(type="text", value=item.sort, name="sort")
+            - }
+            - if ('url' in item) {
+                li
+                    label Силка
+                    input(type="text", value=item.url, name="url")
+            - }
+            - if ('btn' in item) {
+                li
+                    label Текст кнопки
+                    input(type="text", value=item.btn, name="btn")
+            - }
+            - if ('arr' in item && item.arr == "true") {
+                li
+                    a(href="/admin/list_of/"+item.id)=item.arr_name
+            - }
+        input(type="submit",name="submit",value="Update")
