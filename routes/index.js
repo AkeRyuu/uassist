@@ -15,4 +15,10 @@ router.get('/', function(req, res, next) {
 
 router.get('/check_db',(req,res,next)=>db.getList((e)=>res.send(e)));
 
+router.get('/insert_faq',(req,res,next)=>{
+  db.insert_faq(()=>{
+    res.send("done");
+  })
+})
+
 module.exports = router;

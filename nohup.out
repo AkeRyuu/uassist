@@ -3403,3 +3403,219 @@ npm ERR! This is probably not a problem with npm. There is likely additional log
 
 npm ERR! A complete log of this run can be found in:
 npm ERR!     /root/.npm/_logs/2017-07-30T19_27_11_449Z-debug.log
+
+> new-app@0.0.0 start /root/uassist
+> node ./bin/www
+
+[ { desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    ico: 'fa-vcard',
+    id: '308c2fbd-0cb1-4afe-9e56-97e5596a3acd',
+    name: 'Individual approach',
+    sort: '1',
+    type: 'features' },
+  { desc: 'blablaababblabalblablablabalbalbalbalblablablablabllablablablablabalba',
+    ico: 'fa-comments',
+    id: 'f4882268-30b7-44d6-97a0-be473bd969c4',
+    name: 'Superior local knowledge',
+    sort: '2',
+    type: 'features' },
+  { desc: 'Every our guide is verified and instructed. We have prepared some surprising tours for our clients and are confident that they’ll stay happy after our friendly city guides.',
+    ico: 'fa-map-marker',
+    id: '16e2b7b8-9ff0-4784-93eb-64d23509ec61',
+    name: 'Unordinary private city tours',
+    sort: '3',
+    type: 'features' },
+  { desc: 'We have got an experienced research team, which is billable per “active hour”. The quantity of orders we take is limited to ensure high quality for each client.',
+    ico: 'fa-money',
+    id: 'c5ed517c-a10a-4077-94ed-7bb3b88b7886',
+    name: 'Fair pricing',
+    sort: '4',
+    type: 'features' },
+  { desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    ico: 'fa-users',
+    id: '63a529ed-75e1-4f1f-bbca-1ffd8e3c2373',
+    name: 'Strong and friendly team',
+    sort: '5',
+    type: 'features' },
+  { desc: 'Not up to date! - We have set up an English speaking call-center where every ready-for-service manager is instructed and answers based on the created database, including recommended services and partners with discounts.',
+    ico: 'fa-phone-square',
+    id: 'f001782d-c317-4551-b977-15639cbb9189',
+    name: 'Partner Network',
+    sort: '6',
+    type: 'features' } ]
+{ services: 
+   [ { desc: 'To be a local fixer. Giving you an access to local databases ',
+       id: '6570df3c-0a5f-4da0-9513-b4bf7d994d31',
+       name: 'Provide research',
+       sort: '1',
+       type: 'services' },
+     { desc: 'Provide local personal tours. Helping you to see Lviv from the best perspective',
+       id: 'b7c666bd-c77a-49dd-9c63-829e0e99f7f5',
+       name: 'Private tour by local',
+       sort: '2',
+       type: 'services' },
+     { desc: 'Uassist provides call-center services 9-20h for saving your time for the most important things. Be the local secretary',
+       id: '84d5a699-1df5-46e0-b3dd-5e57f492df10',
+       name: 'Local assistance',
+       sort: '3',
+       type: 'services' },
+     { desc: 'Be the local business advisor and partner. Local trust agent. Help with booking meetings and identifying potential business partners. Market research on basic economic data, basic feasibility of their products, to know aboutlegal assistance they can get.',
+       id: '28495578-012e-483b-831e-dc61e64ed9d6',
+       name: 'Connect you to business opportunities',
+       sort: '4',
+       type: 'services' },
+     { desc: 'Help you find who prominent people in your discipline, influential political decision-makers, other research institutions are on location, to arrange meetings with subject-matter-experts who are in town',
+       id: '850adc4f-3d8c-48f2-8af9-2f13f10d53c5',
+       name: 'Help you find local contacts',
+       sort: '5',
+       type: 'services' },
+     { desc: 'The issues during registration of a company in Ukraine is the complexity of the procedure, mistakes in processing documents, time consuming procedure',
+       id: '913bef78-b108-4a1b-8828-f0b12d8a5b37',
+       name: 'Business set-up assistance',
+       sort: '6',
+       type: 'services' } ],
+  features: 
+   [ { desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+       ico: 'fa-vcard',
+       id: '308c2fbd-0cb1-4afe-9e56-97e5596a3acd',
+       name: 'Individual approach',
+       sort: '1',
+       type: 'features' },
+     { desc: 'blablaababblabalblablablabalbalbalbalblablablablabllablablablablabalba',
+       ico: 'fa-comments',
+       id: 'f4882268-30b7-44d6-97a0-be473bd969c4',
+       name: 'Superior local knowledge',
+       sort: '2',
+       type: 'features' },
+     { desc: 'Every our guide is verified and instructed. We have prepared some surprising tours for our clients and are confident that they’ll stay happy after our friendly city guides.',
+       ico: 'fa-map-marker',
+       id: '16e2b7b8-9ff0-4784-93eb-64d23509ec61',
+       name: 'Unordinary private city tours',
+       sort: '3',
+       type: 'features' },
+     { desc: 'We have got an experienced research team, which is billable per “active hour”. The quantity of orders we take is limited to ensure high quality for each client.',
+       ico: 'fa-money',
+       id: 'c5ed517c-a10a-4077-94ed-7bb3b88b7886',
+       name: 'Fair pricing',
+       sort: '4',
+       type: 'features' },
+     { desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+       ico: 'fa-users',
+       id: '63a529ed-75e1-4f1f-bbca-1ffd8e3c2373',
+       name: 'Strong and friendly team',
+       sort: '5',
+       type: 'features' },
+     { desc: 'Not up to date! - We have set up an English speaking call-center where every ready-for-service manager is instructed and answers based on the created database, including recommended services and partners with discounts.',
+       ico: 'fa-phone-square',
+       id: 'f001782d-c317-4551-b977-15639cbb9189',
+       name: 'Partner Network',
+       sort: '6',
+       type: 'features' } ],
+  testimonial: 
+   [ { desc: 'Morbi eget dictum enim. Praesent sed quam sit amet lorem tempor rhoncus. <br> In hac habitasse platea dictumst. Vivamus in accumsan ex',
+       id: 'aadc0da6-f006-4381-a0b4-f5f8e4b5379f',
+       name: 'Johnathan Doe',
+       sort: '1',
+       type: 'testimonial',
+       work: 'Marketing Head Matrix media' },
+     { desc: 'I own a consulting services company that was interested in establishing contacts and finding technical resources in Lviv Ukraine.  Uassist was an essential service that helped me every step of the way. Responsive, connected, creative, enthusiastic and very professional.  I credit my success in finding contacts and partners to Uassist.  They paved the path to make Ukraine an easy place for me to do business.  An exceptional value. Highly recommended.',
+       id: '482bd742-d1b5-4e30-a827-dfdba0adae71',
+       name: 'Chris Miller',
+       sort: '2',
+       type: 'testimonial',
+       work: 'President Lexo Inc' },
+     { desc: 'Morbi eget dictum enim. Praesent sed quam sit amet lorem tempor rhoncus. <br> In hac habitasse platea dictumst. Vivamus in accumsan ex',
+       id: 'a43130e8-fd6e-4572-be18-7952af0f4a17',
+       name: 'Alex Dattilo',
+       sort: '3',
+       type: 'testimonial',
+       work: 'CEO Optima Inc' } ],
+  faq: 
+   [ { desc: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.',
+       id: 'd6b58322-5873-4f3a-9460-4e904fc8993e',
+       name: 'Collapsible Group Item #1',
+       sort: '1',
+       type: 'faq' },
+     { desc: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.',
+       id: '96bb7107-bbda-41e2-8e42-992f627b1bbc',
+       name: 'Collapsible Group Item #2',
+       sort: '2',
+       type: 'faq' },
+     { desc: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.',
+       id: 'b5205010-bf6d-4987-80a3-fd0bcf303dc7',
+       name: 'Collapsible Group Item #3',
+       sort: '3',
+       type: 'faq' },
+     { desc: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.',
+       id: '36ad93f3-d980-47aa-90c7-9b70517aa86e',
+       name: 'Collapsible Group Item #1',
+       sort: '4',
+       type: 'faq' },
+     { desc: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.',
+       id: '40a96b37-4f30-4baf-b22a-5a6eea1b74be',
+       name: 'Collapsible Group Item #1',
+       sort: '4',
+       type: 'faq' },
+     { desc: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.',
+       id: '4649721f-f8f5-4b6f-bff5-99c7818e6a42',
+       name: 'Collapsible Group Item #1',
+       sort: '4',
+       type: 'faq' },
+     { desc: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.',
+       id: '658356b3-0309-4a43-97fc-f34867977dfb',
+       name: 'Collapsible Group Item #1',
+       sort: '4',
+       type: 'faq' },
+     { desc: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.',
+       id: '963f2522-7095-4a2b-b6da-56adb1d2c9b6',
+       name: 'Collapsible Group Item #1',
+       sort: '4',
+       type: 'faq' },
+     { desc: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.',
+       id: 'd0a30023-9de1-42cd-bd43-9677a695e0ce',
+       name: 'Collapsible Group Item #1',
+       sort: '4',
+       type: 'faq' },
+     { desc: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.',
+       id: 'fdde9712-01fb-42a7-b99c-c3eafb6e326f',
+       name: 'Collapsible Group Item #1',
+       sort: '4',
+       type: 'faq' } ] }
+[0mGET / [32m200 [0m1357.682 ms - 28913[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m4.564 ms - -[0m
+[0mGET /css/font-awesome.min.css [36m304 [0m2.593 ms - -[0m
+[0mGET /css/line-icons.css [36m304 [0m2.971 ms - -[0m
+[0mGET /css/owl.carousel.css [36m304 [0m3.033 ms - -[0m
+[0mGET /css/owl.theme.css [36m304 [0m3.155 ms - -[0m
+[0mGET /css/nivo-lightbox.css [36m304 [0m3.248 ms - -[0m
+[0mGET /css/magnific-popup.css [36m304 [0m0.902 ms - -[0m
+[0mGET /css/animate.css [36m304 [0m0.881 ms - -[0m
+[0mGET /css/menu_sideslide.css [36m304 [0m0.541 ms - -[0m
+[0mGET /css/main.css [36m304 [0m0.645 ms - -[0m
+[0mGET /css/responsive.css [36m304 [0m0.239 ms - -[0m
+[0mGET /js/jquery-min.js [36m304 [0m0.286 ms - -[0m
+[0mGET /js/tether.min.js [36m304 [0m0.238 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m2.768 ms - -[0m
+[0mGET /js/classie.js [36m304 [0m1.057 ms - -[0m
+[0mGET /js/nivo-lightbox.js [36m304 [0m1.513 ms - -[0m
+[0mGET /js/mixitup.min.js [36m304 [0m2.262 ms - -[0m
+[0mGET /js/owl.carousel.min.js [36m304 [0m2.371 ms - -[0m
+[0mGET /js/jquery.stellar.min.js [36m304 [0m0.253 ms - -[0m
+[0mGET /js/jquery.nav.js [36m304 [0m0.249 ms - -[0m
+[0mGET /js/smooth-scroll.js [36m304 [0m0.241 ms - -[0m
+[0mGET /js/smooth-on-scroll.js [36m304 [0m0.243 ms - -[0m
+[0mGET /js/wow.js [36m304 [0m2.368 ms - -[0m
+[0mGET /js/menu.js [36m304 [0m0.956 ms - -[0m
+[0mGET /js/jquery.vide.js [36m304 [0m2.095 ms - -[0m
+[0mGET /js/jquery.counterup.min.js [36m304 [0m0.233 ms - -[0m
+[0mGET /js/jquery.magnific-popup.min.js [36m304 [0m0.239 ms - -[0m
+[0mGET /js/waypoints.min.js [36m304 [0m0.234 ms - -[0m
+[0mGET /js/form-validator.min.js [36m304 [0m0.233 ms - -[0m
+[0mGET /js/contact-form-script.js [36m304 [0m0.232 ms - -[0m
+[0mGET /js/main.js [36m304 [0m0.233 ms - -[0m
+[0mGET /img/features/feature.jpg [36m304 [0m0.475 ms - -[0m
+[0mGET /img/testimonial/customer1.png [36m304 [0m0.235 ms - -[0m
+[0mGET /fonts/Linearicons-Free.woff2?w118d [36m304 [0m0.449 ms - -[0m
+[0mGET /fonts/fontawesome-webfont.woff2?v=4.7.0 [36m304 [0m0.449 ms - -[0m
+[0mGET /img/bg_2.jpg [36m304 [0m0.231 ms - -[0m
+[0mGET /css/bootstrap.min.css.map [33m404 [0m25.145 ms - 1614[0m

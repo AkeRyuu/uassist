@@ -236,9 +236,9 @@ block content
                 each panel in arrays[data[5].id]
                     div.panel.panel-default
                         div(class="panel-heading" role="tab" id="headingOne")
-                            h4.panel-title( style="color:#5fa7fb" role="button" onclick="toggle(this)" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls=panel.id)=panel.name
+                            h4.panel-title.text-center( style="color:#5fa7fb;font-size: 26px;" role="button" onclick="toggle(this)" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls=panel.id )=panel.name
                         div(id=panel.id,class="panel-collapse collapse in" ,role="tabpanel")
-                            .panel-body=panel.desc
+                            .panel-body.text-center=panel.desc
     section#download.section
         .container
             .section-header
