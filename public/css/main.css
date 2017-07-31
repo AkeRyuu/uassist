@@ -1340,3 +1340,22 @@ cursor: pointer;
 .contact-btn:active {
   transform: scale(0.9);
 }
+
+
+
+
+
+
+
+
+
+
+
+.icon-carmine-pink {
+    color: #4676fa!important;
+    border-color: #4676fa!important;
+}
+.icon-xl {
+    font-size: 100px!important;
+}
+

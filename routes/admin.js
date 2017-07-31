@@ -33,19 +33,34 @@ router.post('/item/:id',(req,res,next)=>{
       backURL=req.header('Referer') || '/';
       res.redirect(backURL);
     })
+  } if (req.body.submit == "Insert") {
+    delete req.body.submit;
+    db.insertItem(req.body,()=>{
+      backURL=req.header('Referer') || '/';
+      res.redirect(backURL);
+    });
+    
   }
 })
 
 
 router.get('/list_of/:id',(req,res,next)=>{
   db.getArray(req.params.id,e=>{
-    res.render('admin_array',{title:"Список",array:e});
+    res.render('admin_array',{title:"Список",array:e,id:req.params.id});
+  })
+})
+
+router.get('/new/:id',(req,res,next)=>{
+  db.getItem(req.params.id+"_null",(e)=>{
+    res.render('admin_array',{title:"Новий елемент",obj:e,id:req.params.id,type:"new"})
   })
 })
 
 router.get('/insert',(req,res,next)=>{
-  db.insert_arrays();
-  res.send("done");
+  db.insert(()=>{
+    res.send("done");
+  });
+  
 })
 
 module.exports = router;

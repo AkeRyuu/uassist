@@ -1,25 +1,73 @@
 extends admin_layout
 
 block content
-    ul.admin-array
-        each item in array
+    - if (type == "new") {
+        ul.admin-array
             li
-                form(action="/admin/item/"+item.id, method="POST")
-                    - if ('name' in item) {
-                        label Назва
-                        input(type="text", value=item.name, name="name")
-                    - }
-                    - if ('desc' in item) {
-                        label Опис
-                        textarea(name="desc")=value=item.desc
-                    - }
-                    - if ('sort' in item) {
-                        label Порядок
-                        input(type="text", value=item.sort, name="sort")
-                    - }
-                    - if ('ico' in item) {
-                        label Клас іконки
-                        input(type="text", value=item.ico, name="ico")
-                    - }
-                        input(type="submit",name="submit",value="Update")
-                        //-input(type="submit",name="submit",value="Delete")
+                form(action="/admin/item/"+id, method="POST")
+                        input(hidden=true, name="type", value=id)
+                        - if ('name' in obj) {
+                            div.div-item.display-flex-column
+                                label Назва
+                                input.input-shadow(type="text", name="name")
+                                div.div-item-actions.display-flex          
+                        - }
+                        - if ('desc' in obj) {
+                            div.div-item.display-flex-column
+                                label Опис
+                                textarea.input-shadow(name="desc")
+                        - }
+                        - if ('sort' in obj) {
+                            div.div-item.display-flex-column
+                                label Порядок
+                                input.input-shadow(type="text", name="sort")
+                        - }
+                        - if ('ico' in obj) {
+                            div.div-item.display-flex-column
+                                label Клас іконки
+                                input.input-shadow(type="text", name="ico")
+                        - }
+                        - if ('url' in obj) {
+                            div.div-item.display-flex-column
+                                label Шлях до картинки
+                                input.input-shadow(type="text", name="url")
+                        - }
+                        input.input-section(type="submit",name="submit",value="Insert")
+    - }
+    - else {
+        ul.admin-array
+            each item in array
+                li
+                    form(action="/admin/item/"+item.id, method="POST")
+                        - if ('name' in item) {
+                            div.div-item.display-flex-column
+                                label Назва
+                                input.input-shadow(type="text", value=item.name, name="name")
+                                div.div-item-actions.display-flex
+                                    input.btn-update-array(type="submit",name="submit",value="Update")
+                                    input.btn-delete-array(type="submit",name="submit",value="Delete")
+                                
+                        - }
+                        - if ('desc' in item) {
+                            div.div-item.display-flex-column
+                                label Опис
+                                textarea.input-shadow(name="desc")=value=item.desc
+                        - }
+                        - if ('sort' in item) {
+                            div.div-item.display-flex-column
+                                label Порядок
+                                input.input-shadow(type="text", value=item.sort, name="sort")
+                        - }
+                        - if ('ico' in item) {
+                            div.div-item.display-flex-column
+                                label Клас іконки
+                                input.input-shadow(type="text", value=item.ico, name="ico")
+                        - }
+                        - if ('url' in item) {
+                            div.div-item.display-flex-column
+                                label Шлях до картинки
+                                input.input-shadow(type="text", value=item.url, name="url")
+                        - }
+        a.array-add(href="/admin/new/"+id)
+            img(src="/img/admin/add.png")
+    - }

@@ -6,7 +6,7 @@ var db = require("./../db");
 router.get('/', function(req, res, next) {
   db.getList((e)=>{
     db.getArrays((data)=>{
-      console.log(data);
+      //console.log(data);
       res.render('index', { data:e,table_items : db.table_items,menu:db.menu_list,arrays:data});
     });
   });

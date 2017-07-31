@@ -75,10 +75,41 @@ block content
                     div(class="col-md-4 col-sm-6")
                         div(class="item-boxes wow fadeInDown", data-wow-delay=(i*0.2)+"s")
                             .icon
-                                i(class="fa fa-user")
+                                i(class="fa "+e.ico)
                             h4=e.name
                             p=e.desc
                 - },this)
+    section.section
+        .container
+            .section-header
+                h2(class="section-title wow fadeIn", data-wow-duration="1000ms", data-wow-delay="0.3s") BENEFITS
+                hr(class="lines wow zoomIn", data-wow-delay="0.3s")
+                //p(class="section-subtitle wow fadeIn", data-wow-duration="1000ms", data-wow-delay="0.3s")=data[1].desc
+            .row
+                <div class="col-sm-4">
+                    <div class="text-center">
+                        <span style="visibility: visible;" class="et-icon-picture icon-xl icon-carmine-pink zoomIn animDelay02 animated"></span>
+                    </div>
+                    <h4 class="text-center mg-md " style="font-size:39px"> Web Design</h4>
+
+                    <p class="text-center">A little feature description could go here. A little feature description. </p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="text-center">
+                        <span style="visibility: visible;" class="et-icon-gears icon-xl icon-carmine-pink zoomIn animated"></span>
+                    </div>
+                    <h4 class="text-center mg-md " style="font-size:39px">Web Development</h4>
+
+                    <p class="text-center">A little feature description could go here. A little feature description.</p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="text-center">
+                        <span style="visibility: visible;" class="et-icon-linegraph icon-xl icon-carmine-pink zoomIn animDelay02 animated"></span>
+                    </div>
+                    <h4 class="text-center mg-md " style="font-size:39px">Promotion</h4>
+
+                    <p class="text-center">A little feature description could go here. A little feature description.</p>
+                </div>
     section( id=data[2].id, class="section", data-stellar-background-ratio="0.2")
         div( class="container")
             div( class="section-header")
@@ -111,7 +142,7 @@ block content
                                         h4=e.name
                                         p=e.desc
                             -}
-
+    
     section(id=data[3].id class="video-promo section", data-stellar-background-ratio="0.5")
         .overlay
         .container
@@ -204,31 +235,11 @@ block content
                     div.touch-slider.owl-carousel.owl-theme
                         each e in arrays[data[4].id]
                             div.testimonial-item
-                                img(src="img/testimonial/customer1.png" alt="Client Testimonoal")
+                                img(src=e.url, alt="Client Testimonoal")
                                 div.testimonial-text
                                     p=e.desc
                                     h3=e.name
                                     span=e.work
-                        //div.testimonial-item
-                            img(src="img/testimonial/customer2.png" alt="Client Testimonoal")
-                            div.testimonial-text
-                                p 
-                                    |Morbi eget dictum enim. Praesent sed quam sit amet lorem tempor rhoncus.
-                                    br
-                                    |In hac habitasse platea dictumst.
-                                    |Vivamus in accumsan ex
-                                h3 Oidila Matik
-                                span President Lexo Inc        
-                        //div.testimonial-item
-                            img(src="img/testimonial/customer3.png" alt="Client Testimonoal")
-                            div.testimonial-text
-                                p 
-                                    |Morbi eget dictum enim. Praesent sed quam sit amet lorem tempor rhoncus.
-                                    br
-                                    |In hac habitasse platea dictumst.
-                                    |Vivamus in accumsan ex
-                                h3 Alex Dattilo
-                                span CEO Optima Inc
     section(id=data[5].id class="section")
         div.container
             h2.text-center=data[5].name
