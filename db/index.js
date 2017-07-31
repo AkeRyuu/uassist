@@ -73,6 +73,52 @@ var getArrays = (callback) => {
     });
 }
 
+var insert_faq = (callback) => {
+    ref.insert([{
+        sort: '4',
+        name: "Collapsible Group Item #1",
+        desc: "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.",
+        type: "faq"
+    },
+{
+        sort: '4',
+        name: "Collapsible Group Item #1",
+        desc: "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.",
+        type: "faq"
+    },
+{
+        sort: '4',
+        name: "Collapsible Group Item #1",
+        desc: "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.",
+        type: "faq"
+    },
+{
+        sort: '4',
+        name: "Collapsible Group Item #1",
+        desc: "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.",
+        type: "faq"
+    },
+{
+        sort: '4',
+        name: "Collapsible Group Item #1",
+        desc: "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.",
+        type: "faq"
+    },
+{
+        sort: '4',
+        name: "Collapsible Group Item #1",
+        desc: "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.",
+        type: "faq"
+    },
+{
+        sort: '4',
+        name: "Collapsible Group Item #1",
+        desc: "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.",
+        type: "faq"
+    }]).run(conn,(err,res)=>{
+        callback();
+    })
+}
 
 var insert = () => {
     ref.insert([
